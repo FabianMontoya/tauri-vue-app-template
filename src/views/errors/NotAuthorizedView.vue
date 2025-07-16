@@ -1,5 +1,6 @@
 <script setup lang="ts"></script>
-
 <template>
-  <RouterView />
+  <section>
+    <h1>Not authorized</h1>
+  </section>
 </template>

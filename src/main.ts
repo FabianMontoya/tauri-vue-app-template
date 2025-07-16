@@ -1,12 +1,11 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+import router from './router';
 import './styles/main.css';
 
 import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
 import PrimeVue from 'primevue/config';
-
-const app = createApp(App);
 
 const AuraCustomPreset = definePreset(Aura, {
   semantic: {
@@ -43,34 +42,46 @@ const AuraCustomPreset = definePreset(Aura, {
       dark: {
         surface: {
           0: '#ffffff',
-          50: '{slate.50}',
-          100: '{slate.100}',
-          200: '{slate.200}',
-          300: '{slate.300}',
-          400: '{slate.400}',
-          500: '{slate.500}',
-          600: '{slate.600}',
-          700: '{slate.700}',
-          800: '{slate.800}',
-          900: '{slate.900}',
-          950: '{slate.950}'
+          50: '{neutral.50}',
+          100: '{neutral.100}',
+          200: '{neutral.200}',
+          300: '{neutral.300}',
+          400: '{neutral.400}',
+          500: '{neutral.500}',
+          600: '{neutral.600}',
+          700: '{neutral.700}',
+          800: '{neutral.800}',
+          900: '{neutral.900}',
+          950: '{neutral.950}'
         }
       }
     }
   },
   components: {
     inputtext: {
-      root: {
-        background: 'transparent'
+      colorScheme: {
+        dark: {
+          root: {
+            background: 'transparent'
+          }
+        }
       }
     },
     select: {
-      root: {
-        background: 'transparent'
+      colorScheme: {
+        dark: {
+          root: {
+            background: 'transparent'
+          }
+        }
       }
     }
   }
 });
+
+const app = createApp(App);
+
+app.use(router);
 
 app.use(PrimeVue, {
   ripple: true,
