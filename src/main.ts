@@ -22,6 +22,9 @@ const AuraCustomPreset = definePreset(Aura, {
       900: '{amber.900}',
       950: '{amber.950}'
     },
+    formField: {
+      paddingY: '0.4rem'
+    },
     colorScheme: {
       light: {
         surface: {
@@ -74,6 +77,11 @@ const AuraCustomPreset = definePreset(Aura, {
             background: 'transparent'
           }
         }
+      }
+    },
+    button: {
+      root: {
+        paddingY: '0.35rem'
       }
     }
   }
