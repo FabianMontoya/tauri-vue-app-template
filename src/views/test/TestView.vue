@@ -4,6 +4,9 @@ import Button from 'primevue/button';
 import InputText from 'primevue/inputtext';
 import Select from 'primevue/select';
 import { ref } from 'vue';
+import { useCounterStore } from '../../stores/counter';
+
+const counterStore = useCounterStore();
 
 const greetMsg = ref('');
 const name = ref('');
@@ -75,6 +78,11 @@ async function greet() {
       <div>
         <InputText v-model="name" type="text" placeholder="Normal" class="w-full md:w-56" />
       </div>
+    </div>
+
+    <div class="flex flex-row items-center gap-2">
+      <span>Counter Store: {{ counterStore.count }}</span>
+      <Button label="Add more" severity="secondary" size="small" @click="counterStore.increment" />
     </div>
 
     <form class="row" @submit.prevent="greet">
