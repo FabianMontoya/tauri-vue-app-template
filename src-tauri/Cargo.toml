@@ -23,3 +23,18 @@ tauri-plugin-opener = "2"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 
+# Profile configurations
+[profile.dev]
+debug = 0
+
+# Release profile optimizations
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+strip = true
+
+# Binary target
+[[bin]]
+name = "tauri-app"
+path = "src/main.rs"
