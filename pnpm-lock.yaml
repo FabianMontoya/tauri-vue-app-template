@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@primeuix/themes':
-        specifier: ^1.2.1
-        version: 1.2.1
+        specifier: ^2.0.3
+        version: 2.0.3
       '@tabler/icons-vue':
         specifier: ^3.34.0
         version: 3.34.0(vue@3.5.17(typescript@5.6.3))
@@ -383,14 +383,22 @@ packages:
     resolution: {integrity: sha512-xUqMdQb75izeDkNWFK1QlU15aUl5LIU97Fq68IXOhrqqLsKEBnj5ftntFZrENQW70jAHwALdWP4EOGi/poc9Tg==}
     engines: {node: '>=12.11.0'}
 
+  '@primeuix/styled@0.7.4':
+    resolution: {integrity: sha512-QSO/NpOQg8e9BONWRBx9y8VGMCMYz0J/uKfNJEya/RGEu7ARx0oYW0ugI1N3/KB1AAvyGxzKBzGImbwg0KUiOQ==}
+    engines: {node: '>=12.11.0'}
+
   '@primeuix/styles@1.2.1':
     resolution: {integrity: sha512-Tri7pPgZgxrVmhJG8ijZZFolQ6vu27xnkGoAB9EFY8YlaKTM5iqkWzEcqdxy2KmgFWMXi+BrPHwO0RdQ6JCT+g==}
 
-  '@primeuix/themes@1.2.1':
-    resolution: {integrity: sha512-DVCFDncvag47tpag3TdufDTuvUbfKnkgzmlxAQkwuMS0IlPA3wChrf9VlL2wETg/ZpJm/tHobkJBnB9FmkiqnA==}
+  '@primeuix/themes@2.0.3':
+    resolution: {integrity: sha512-3fS1883mtCWhgUgNf/feiaaDSOND4EBIOu9tZnzJlJ8QtYyL6eFLcA6V3ymCWqLVXQ1+lTVEZv1gl47FIdXReg==}
 
   '@primeuix/utils@0.6.0':
     resolution: {integrity: sha512-ULpB87ImNAiX36OMtyDeRceWB7N/mVlh6gGLqp/lx8UMKZlLIQH/UAFND86hYXHwNpXeNKcWfMGreb0Oc0hcZA==}
+    engines: {node: '>=12.11.0'}
+
+  '@primeuix/utils@0.6.4':
+    resolution: {integrity: sha512-pZ5f+vj7wSzRhC7KoEQRU5fvYAe+RP9+m39CTscZ3UywCD1Y2o6Fe1rRgklMPSkzUcty2jzkA0zMYkiJBD1hgg==}
     engines: {node: '>=12.11.0'}
 
   '@primevue/core@4.3.6':
@@ -1156,6 +1164,7 @@ packages:
   glob@11.0.3:
     resolution: {integrity: sha512-2Nim7dha1KVkaiF4q6Dj+ngPPMdfvLJEOpZk/jKiUAkqKebpGAWQXAq9z1xu9HKu5lWfqw/FASuccEjyznjPaA==}
     engines: {node: 20 || >=22}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   globals@14.0.0:
@@ -1743,6 +1752,7 @@ packages:
   tar@7.4.3:
     resolution: {integrity: sha512-5S7Va8hKfV7W5U6g3aYxXmlPoZVAwUMy9AOKyF2fVuZa2UD3qZjg578OrLRt8PcNN1PleVaL/5/yYATNL0ICUw==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   tinyglobby@0.2.14:
     resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
@@ -2100,15 +2110,21 @@ snapshots:
     dependencies:
       '@primeuix/utils': 0.6.0
 
+  '@primeuix/styled@0.7.4':
+    dependencies:
+      '@primeuix/utils': 0.6.4
+
   '@primeuix/styles@1.2.1':
     dependencies:
       '@primeuix/styled': 0.7.0
 
-  '@primeuix/themes@1.2.1':
+  '@primeuix/themes@2.0.3':
     dependencies:
-      '@primeuix/styled': 0.7.0
+      '@primeuix/styled': 0.7.4
 
   '@primeuix/utils@0.6.0': {}
+
+  '@primeuix/utils@0.6.4': {}
 
   '@primevue/core@4.3.6(vue@3.5.17(typescript@5.6.3))':
     dependencies:
