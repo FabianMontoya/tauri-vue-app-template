@@ -30,8 +30,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3(typescript@5.6.3)(vue@3.5.17(typescript@5.6.3))
       pinia-plugin-persistedstate:
-        specifier: ^4.4.1
-        version: 4.4.1(pinia@3.0.3(typescript@5.6.3)(vue@3.5.17(typescript@5.6.3)))
+        specifier: ^4.7.1
+        version: 4.7.1(pinia@3.0.3(typescript@5.6.3)(vue@3.5.17(typescript@5.6.3)))
       primeicons:
         specifier: ^7.0.0
         version: 7.0.0
@@ -1001,14 +1001,8 @@ packages:
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
-  deep-pick-omit@1.2.1:
-    resolution: {integrity: sha512-2J6Kc/m3irCeqVG42T+SaUMesaK7oGWaedGnQQK/+O0gYc+2SP5bKh/KKTE7d7SJ+GCA9UUE1GRzh6oDe0EnGw==}
-
   defu@6.1.4:
     resolution: {integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==}
-
-  destr@2.0.5:
-    resolution: {integrity: sha512-ugFTXCtDZunbzasqBxrK93Ik/DRYsO6S/fedkWEMKqt04xZ4csmnmwGDBAb07QWNaGMAmnTIemsYZCksjATwsA==}
 
   detect-libc@2.0.4:
     resolution: {integrity: sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==}
@@ -1542,8 +1536,8 @@ packages:
     engines: {node: '>=0.10'}
     hasBin: true
 
-  pinia-plugin-persistedstate@4.4.1:
-    resolution: {integrity: sha512-lmuMPpXla2zJKjxEq34e1E9P9jxkWEhcVwwioCCE0izG45kkTOvQfCzvwhW3i38cvnaWC7T1eRdkd15Re59ldw==}
+  pinia-plugin-persistedstate@4.7.1:
+    resolution: {integrity: sha512-WHOqh2esDlR3eAaknPbqXrkkj0D24h8shrDPqysgCFR6ghqP/fpFfJmMPJp0gETHsvrh9YNNg6dQfo2OEtDnIQ==}
     peerDependencies:
       '@nuxt/kit': '>=3.0.0'
       '@pinia/nuxt': '>=0.10.0'
@@ -2712,11 +2706,7 @@ snapshots:
 
   deep-is@0.1.4: {}
 
-  deep-pick-omit@1.2.1: {}
-
   defu@6.1.4: {}
-
-  destr@2.0.5: {}
 
   detect-libc@2.0.4: {}
 
@@ -3213,11 +3203,9 @@ snapshots:
 
   pidtree@0.6.0: {}
 
-  pinia-plugin-persistedstate@4.4.1(pinia@3.0.3(typescript@5.6.3)(vue@3.5.17(typescript@5.6.3))):
+  pinia-plugin-persistedstate@4.7.1(pinia@3.0.3(typescript@5.6.3)(vue@3.5.17(typescript@5.6.3))):
     dependencies:
-      deep-pick-omit: 1.2.1
       defu: 6.1.4
-      destr: 2.0.5
     optionalDependencies:
       pinia: 3.0.3(typescript@5.6.3)(vue@3.5.17(typescript@5.6.3))
 
