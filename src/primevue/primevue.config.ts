@@ -1,20 +1,21 @@
 import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
 
+/* NOTE: In this file you can changes all about colors */
 export const AuraCustomPreset = definePreset(Aura, {
   semantic: {
     primary: {
-      50: '{amber.50}',
-      100: '{amber.100}',
-      200: '{amber.200}',
-      300: '{amber.300}',
-      400: '{amber.400}',
-      500: '{amber.500}',
-      600: '{amber.600}',
-      700: '{amber.700}',
-      800: '{amber.800}',
-      900: '{amber.900}',
-      950: '{amber.950}'
+      50: '{emerald.50}',
+      100: '{emerald.100}',
+      200: '{emerald.200}',
+      300: '{emerald.300}',
+      400: '{emerald.400}',
+      500: '{emerald.500}',
+      600: '{emerald.600}',
+      700: '{emerald.700}',
+      800: '{emerald.800}',
+      900: '{emerald.900}',
+      950: '{emerald.950}'
     },
     formField: {
       paddingY: '0.4rem'
@@ -73,9 +74,56 @@ export const AuraCustomPreset = definePreset(Aura, {
         }
       }
     },
+    textarea: {
+      colorScheme: {
+        dark: {
+          root: {
+            background: 'transparent'
+          }
+        }
+      }
+    },
     button: {
       root: {
         paddingY: '0.35rem'
+      }
+    },
+    tabs: {
+      colorScheme: {
+        dark: {
+          tablist: {
+            background: 'transparent'
+          },
+          tabpanel: {
+            background: 'transparent'
+          }
+        },
+        light: {
+          tabpanel: {
+            background: 'transparent'
+          }
+        }
+      }
+    },
+    datatable: {
+      colorScheme: {
+        dark: {
+          header: {
+            background: 'transparent'
+          },
+          footer: {
+            background: 'transparent'
+          }
+        }
+      }
+    },
+    paginator: {
+      colorScheme: {
+        dark: {
+          root: {
+            background: 'transparent'
+          }
+        }
       }
     }
   }

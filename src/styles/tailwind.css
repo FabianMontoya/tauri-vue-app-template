@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: var(--p-primary-color);
+  --color-muted: var(--color-neutral-500);
+}
+
+@theme dark {
+  --color-muted: var(--color-neutral-400);
+}
